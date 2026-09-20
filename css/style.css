@@ -1,0 +1,43 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #6c757d;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1000px;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    color: #6c757d; 
+    text-align: center; 
+    font-size: 3em; 
+    margin-top: 50px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: bold;
+}
+
+img{
+    margin-top: 50px; 
+    margin-left: 350px; 
+    width: 870px; 
+    height: 470px;
+}

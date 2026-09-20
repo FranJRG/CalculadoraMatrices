@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz Determinante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav fragment="navMatricial" class="navbar navbar-expand-lg sticky-top bg-light">
+		
+		
+        <div class="container-fluid">
+         <a class="navbar-brand  " href="./index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+       
+         <div class="collapse navbar-collapse" id="navbarNav">
+        
+           <ul class="navbar-nav">
+           
+            <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Matrices
+                 </a>
+                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                 
+                    <li>
+                           <a class="dropdown-item " href="matrizInversa.html">Matriz Inversa</a>
+                    </li>
+                    
+                   <li>
+                           <a class="dropdown-item " href="problemasMatriciales.html">Problemas Matriciales</a>
+                   </li>
+                   
+                   <li>
+                       <a class="dropdown-item " href="/matrices/matrizDeterminante.html">Matriz Determinante</a>
+                   </li>				    
+                 </ul>
+              </li>				        	 
+              
+           </ul>
+    
+         </div>
+         </div>
+</nav>
+<h1 align="center">PROBLEMAS MATRICIALES</h1>
+<form style="margin-left: 460px; width: 610px;"  id="matrizDet" class="calculator">
+    <small style="font-weight: bold;">- Introduzca el sistema de ecuaciones en formato matriz</small>
+    <div style="padding-left:17px ;">
+        <input type="text" readonly value="x"> <input type="text" readonly value="y"> <input type="text" readonly value="z"><br>
+        <br><input type="number" id="a" placeholder="Valor 1,1">
+        <input type="number" step="0.001" id="b" placeholder="Valor 1,2">
+        <input type="number" step="0.001" id="c" placeholder="Valor 1,3">
+        <br><input type="number" step="0.001" id= "d" placeholder="Valor 2,1">
+        <input type="number" step="0.001" id="e" placeholder="Valor 2,2">
+        <input type="number" step="0.001" id="f" placeholder="Valor 2,3">
+        <br><input type="number" step="0.001" id= "g" placeholder="Valor 3,1">
+        <input type="number" step="0.001" id="h" placeholder="Valor 3,2">
+        <input type="number" step="0.001" id="i" placeholder="Valor 3,3">
+        <br>
+    </div>
+    <br>
+    <div>
+        <button id="det" type="submit" class="btn btn-success">Calcular Determinante</button>
+    </div>
+    <br>
+    <br>
+    <p>Paso 1: <span id="paso1"></span></p>
+    <p>Paso 2: <span id="paso2"></span></p>
+    <p>Paso 3: <span id="paso3"></span></p>
+    <p>El resultado de la matriz determinantes es : <span id="result"></span></p>
+</form>
+
+<script src="/js/calculadora .js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
